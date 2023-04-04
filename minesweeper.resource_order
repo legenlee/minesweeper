@@ -1,18 +1,22 @@
 {
   "FolderOrderSettings": [
+    {"name":"assets","order":13,"path":"folders/assets.yy",},
+    {"name":"fonts","order":3,"path":"folders/assets/fonts.yy",},
+    {"name":"sprites","order":4,"path":"folders/assets/sprites.yy",},
     {"name":"entry","order":10,"path":"folders/entry.yy",},
     {"name":"main","order":12,"path":"folders/main.yy",},
     {"name":"components","order":1,"path":"folders/main/components.yy",},
     {"name":"gml","order":1,"path":"folders/main/components/gml.yy",},
-    {"name":"assets","order":13,"path":"folders/assets.yy",},
     {"name":"minesweeper","order":4,"path":"folders/main/minesweeper.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"fnt_mine_label","order":2,"path":"fonts/fnt_mine_label/fnt_mine_label.yy",},
     {"name":"scr_constants","order":11,"path":"scripts/scr_constants/scr_constants.yy",},
+    {"name":"scr_box","order":2,"path":"scripts/scr_box/scr_box.yy",},
     {"name":"scr_create_minesweeper","order":1,"path":"scripts/scr_create_minesweeper/scr_create_minesweeper.yy",},
+    {"name":"fnt_header","order":1,"path":"fonts/fnt_header/fnt_header.yy",},
     {"name":"scr_room","order":1,"path":"scripts/scr_room/scr_room.yy",},
     {"name":"obj_manager","order":2,"path":"objects/obj_manager/obj_manager.yy",},
-    {"name":"fnt_default","order":1,"path":"fonts/fnt_default/fnt_default.yy",},
+    {"name":"spr_number","order":1,"path":"sprites/spr_number/spr_number.yy",},
   ],
 }

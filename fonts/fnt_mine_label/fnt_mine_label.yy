@@ -33,8 +33,8 @@
   "last": 0,
   "maintainGms1Font": false,
   "parent": {
-    "name": "assets",
-    "path": "folders/assets.yy",
+    "name": "fonts",
+    "path": "folders/assets/fonts.yy",
   },
   "pointRounding": 0,
   "ranges": [

@@ -16,6 +16,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"components","folderPath":"folders/main/components.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"gml","folderPath":"folders/main/components/gml.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"assets","folderPath":"folders/assets.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"minesweeper","folderPath":"folders/main/minesweeper.yy",},
   ],
   "IncludedFiles": [],
   "isEcma": false,
@@ -26,6 +27,7 @@
   "resources": [
     {"id":{"name":"fnt_mine_label","path":"fonts/fnt_mine_label/fnt_mine_label.yy",},},
     {"id":{"name":"scr_constants","path":"scripts/scr_constants/scr_constants.yy",},},
+    {"id":{"name":"scr_create_minesweeper","path":"scripts/scr_create_minesweeper/scr_create_minesweeper.yy",},},
     {"id":{"name":"fnt_header","path":"fonts/fnt_header/fnt_header.yy",},},
     {"id":{"name":"scr_room","path":"scripts/scr_room/scr_room.yy",},},
     {"id":{"name":"obj_manager","path":"objects/obj_manager/obj_manager.yy",},},

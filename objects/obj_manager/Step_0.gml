@@ -11,12 +11,7 @@ switch (state) {
 	case ManagerState.MAIN: {
 		if (clickable == true && mouse_check_button_released(mb_left)) {
 			var selectedPreset = presets[preset];
-			
-			with (instance_create_layer(0, 0, "Instances", obj_minesweeper)) {
-				width = selectedPreset.width;
-				height = selectedPreset.height;
-				mines = selectedPreset.mines;
-			}
+			scr_createMinesweeper(selectedPreset.width, selectedPreset.height, selectedPreset.mines);
 			
 			state = ManagerState.PLAYING;
 		}

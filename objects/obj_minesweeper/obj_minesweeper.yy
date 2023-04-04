@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "main",
-    "path": "folders/main.yy",
+    "name": "minesweeper",
+    "path": "folders/main/minesweeper.yy",
   },
   "parentObjectId": null,
   "persistent": false,

@@ -31,6 +31,7 @@
     {"id":{"name":"obj_manager","path":"objects/obj_manager/obj_manager.yy",},},
     {"id":{"name":"fnt_default","path":"fonts/fnt_default/fnt_default.yy",},},
     {"id":{"name":"scr_draw","path":"scripts/scr_draw/scr_draw.yy",},},
+    {"id":{"name":"obj_minesweeper","path":"objects/obj_minesweeper/obj_minesweeper.yy",},},
     {"id":{"name":"rm_screen","path":"rooms/rm_screen/rm_screen.yy",},},
   ],
   "RoomOrderNodes": [

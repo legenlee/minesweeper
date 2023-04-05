@@ -1,2 +1,2 @@
-*.yy linguist-vendored=false
-*.yyp linguist-vendored=false
+* linguist-vendored
+*.gml linguist-vendored=false

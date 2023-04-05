@@ -3,6 +3,7 @@ height = noone;
 mines = noone;
 size = noone;
 minePositions = noone;
+flagPositions = noone;
 
 dunked = false;
 

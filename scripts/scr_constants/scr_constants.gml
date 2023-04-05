@@ -8,6 +8,7 @@
 	#macro COLOR_LIGHT_GRAY make_color_rgb(240, 240, 240)
 	#macro COLOR_GRAY make_color_rgb(224, 224, 224)
 	#macro COLOR_DARK_GRAY make_color_rgb(192, 192, 192)
+	#macro COLOR_DARKIST_GRAY make_color_rgb(128, 128, 128)
 	#macro COLOR_BLACK make_color_rgb(0, 0, 0)
 	
 	#macro COLOR_YELLOW make_color_rgb(255, 255, 0)
@@ -23,6 +24,9 @@
 	#macro FONT_MINE_LABEL fnt_mine_label
 	
 	#macro TEXT_BUTTON_PADDING 24
+	
+	#macro GAMEOVER_TITLE "well, seems like you've been dunked on."
+	#macro GAMEOVER_LABEL "anyway, click any mouse button makes game reset."
 #endregion
 
 #region Gamefield Settings

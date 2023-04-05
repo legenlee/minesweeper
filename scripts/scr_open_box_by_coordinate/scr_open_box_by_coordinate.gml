@@ -6,8 +6,6 @@ function scr_open_box_by_coordinate(field, boxX, boxY, width, height) {
 	
 	var box = scr_get_box_by_coordinate(field, boxX, boxY);
 	
-	show_debug_message(box);
-	
 	if (!is_struct(box) || box.open) {
 		return;
 	}

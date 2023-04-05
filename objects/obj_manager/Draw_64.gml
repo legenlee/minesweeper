@@ -51,4 +51,21 @@ switch (state) {
 		
 		break;
 	}
+	
+	case ManagerState.DUNKED: {
+		draw_set_font(FONT_HEADER);
+		
+		//draw_set_color(COLOR_BLUE);
+		//draw_text(horizontalCenter + 4, verticalCenter - 16 + 4, GAMEOVER_TITLE);
+		draw_text_outlined(horizontalCenter, verticalCenter - 16, GAMEOVER_TITLE, COLOR_YELLOW, COLOR_BLACK);
+		
+		
+		draw_set_font(FONT_DEFAULT);
+
+		//draw_set_color(COLOR_BLUE);
+		//draw_text(horizontalCenter + 4, verticalCenter + 16 + 4, GAMEOVER_LABEL);
+		draw_text_outlined(horizontalCenter, verticalCenter + 16, GAMEOVER_LABEL, COLOR_YELLOW, COLOR_BLACK);
+
+		break;
+	}
 }

@@ -31,6 +31,7 @@
     {"id":{"name":"fnt_mine_label","path":"fonts/fnt_mine_label/fnt_mine_label.yy",},},
     {"id":{"name":"scr_constants","path":"scripts/scr_constants/scr_constants.yy",},},
     {"id":{"name":"scr_open_box_by_index","path":"scripts/scr_open_box_by_index/scr_open_box_by_index.yy",},},
+    {"id":{"name":"scr_toggle_flag_box_by_coordinate9","path":"scripts/scr_toggle_flag_box_by_coordinate9/scr_toggle_flag_box_by_coordinate9.yy",},},
     {"id":{"name":"spr_mine","path":"sprites/spr_mine/spr_mine.yy",},},
     {"id":{"name":"scr_box","path":"scripts/scr_box/scr_box.yy",},},
     {"id":{"name":"scr_create_minesweeper","path":"scripts/scr_create_minesweeper/scr_create_minesweeper.yy",},},

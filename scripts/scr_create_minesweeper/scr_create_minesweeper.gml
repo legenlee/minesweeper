@@ -70,12 +70,17 @@ function scr_create_minesweeper(width, height, mines) {
 		}
 	}
 	
-	with (instance_create_layer(0, 0, "Instances", obj_minesweeper)) {
+	var minesweeper = instance_create_layer(0, 0, "Instances", obj_minesweeper);
+	
+	with (minesweeper) {
 		self.width = width;
 		self.height = height;
 		self.mines = mines;
 		self.size = size;
 		self.field = field;
 		self.minePositions = minePositions;
+		self.flagPositions = ds_list_create();
 	};
+	
+	return minesweeper;
 }

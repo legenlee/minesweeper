@@ -36,4 +36,4 @@ presets = [
 state = ManagerState.LOADING;
 preset = MinesweeperPreset.BEGINNER;
 clickable = false;
-
+minesweeper = noone;

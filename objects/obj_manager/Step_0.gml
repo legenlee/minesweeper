@@ -11,11 +11,27 @@ switch (state) {
 	case ManagerState.MAIN: {
 		if (clickable == true && mouse_check_button_released(mb_left)) {
 			var selectedPreset = presets[preset];
-			scr_create_minesweeper(selectedPreset.width, selectedPreset.height, selectedPreset.mines);
+			minesweeper = scr_create_minesweeper(selectedPreset.width, selectedPreset.height, selectedPreset.mines);
 			
 			state = ManagerState.PLAYING;
 		}
 	
+		break;
+	}
+	
+	case ManagerState.PLAYING: {
+		if (minesweeper != noone && minesweeper.dunked) {
+			state = ManagerState.DUNKED;
+		}
+		
+		break;
+	}
+	
+	case ManagerState.DUNKED: {
+		if (mouse_check_button_released(mb_any)) {
+			game_restart();
+		}
+		
 		break;
 	}
 }

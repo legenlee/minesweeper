@@ -3,12 +3,8 @@ if (width != noone && height != noone) {
 		mouseLeftInput = mouse_check_button(mb_left);
 		mouseLeftReleased = mouse_check_button_released(mb_left);
 	
-		if (hoveredBoxX != noone && hoveredBoxY != noone) {
-			hoveredBox = ds_grid_get(field, hoveredBoxX, hoveredBoxY);
-		}
-	
 		if (mouseLeftReleased && clickable) {
-			hoveredBox.setOpen(true);
+			scr_open_box_by_coordinate(field, hoveredBoxX, hoveredBoxY, width, height);
 		}
 	} else {
 		mouseLeftInput = 0;

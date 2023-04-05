@@ -14,7 +14,7 @@
 	#macro COLOR_BLUE make_color_rgb(0, 0, 220)
 	#macro COLOR_GREEN make_color_rgb(0, 220, 0)
 	#macro COLOR_RED make_color_rgb(220, 0, 0)
-	#macro COLOR_LIGHT_BLUE make_color_rgb(0, 248, 0)
+	#macro COLOR_LIGHT_BLUE make_color_rgb(0, 128, 248)
 	#macro COLOR_BROWN make_color_rgb(217, 185, 155)
 	#macro COLOR_CYAN make_color_rgb(0, 255, 255)
 	

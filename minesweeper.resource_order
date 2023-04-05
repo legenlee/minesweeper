@@ -10,10 +10,13 @@
     {"name":"minesweeper","order":4,"path":"folders/main/minesweeper.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"scr_open_box_by_coordinate","order":3,"path":"scripts/scr_open_box_by_coordinate/scr_open_box_by_coordinate.yy",},
     {"name":"fnt_mine_label","order":2,"path":"fonts/fnt_mine_label/fnt_mine_label.yy",},
     {"name":"scr_constants","order":11,"path":"scripts/scr_constants/scr_constants.yy",},
+    {"name":"scr_open_box_by_index","order":5,"path":"scripts/scr_open_box_by_index/scr_open_box_by_index.yy",},
     {"name":"scr_box","order":2,"path":"scripts/scr_box/scr_box.yy",},
     {"name":"scr_create_minesweeper","order":1,"path":"scripts/scr_create_minesweeper/scr_create_minesweeper.yy",},
+    {"name":"scr_get_box_by_coordinate","order":4,"path":"scripts/scr_get_box_by_coordinate/scr_get_box_by_coordinate.yy",},
     {"name":"fnt_header","order":1,"path":"fonts/fnt_header/fnt_header.yy",},
     {"name":"scr_room","order":1,"path":"scripts/scr_room/scr_room.yy",},
     {"name":"obj_manager","order":2,"path":"objects/obj_manager/obj_manager.yy",},

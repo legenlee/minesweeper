@@ -35,17 +35,7 @@ if (width != noone && height != noone) {
 			draw_set_color(COLOR_WHITE);
 			draw_rectangle(boxRectLeft, boxRectTop, boxRectRight, boxRectBottom, false);
 			
-			//if (box.open) {
-			//	if (dunked || !hovered) {
-			//		draw_set_color(COLOR_GRAY);
-			//	} else if (mouseLeftInput) {
-			//		draw_set_color(COLOR_DARK_GRAY);
-			//	} else {
-			//		draw_set_color(COLOR_LIGHT_GRAY);
-			//	}
-				
-			//	draw_rectangle(boxRectLeft + 1, boxRectTop + 1, boxRectRight - 1, boxRectBottom - 1, false);
-			//} else {
+			if (box.open) {
 				draw_set_color(COLOR_BLACK);
 				draw_rectangle(boxRectLeft + 1, boxRectTop + 1, boxRectRight - 1, boxRectBottom - 1, false);
 				
@@ -98,7 +88,17 @@ if (width != noone && height != noone) {
 				} else {
 					draw_sprite(spr_mine, 0, boxRectLeft, boxRectTop);
 				}
-			//}		
+			} else {
+				if (dunked || !hovered) {
+					draw_set_color(COLOR_GRAY);
+				} else if (mouseLeftInput) {
+					draw_set_color(COLOR_DARK_GRAY);
+				} else {
+					draw_set_color(COLOR_LIGHT_GRAY);
+				}
+				
+				draw_rectangle(boxRectLeft + 1, boxRectTop + 1, boxRectRight - 1, boxRectBottom - 1, false);
+			}		
 		}
 	}
 }

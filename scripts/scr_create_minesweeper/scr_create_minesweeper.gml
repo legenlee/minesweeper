@@ -23,48 +23,48 @@ function scr_create_minesweeper(width, height, mines) {
 			var rightBordered = widthPosition == width - 1;
 			var topBordered = heightPosition == 0;
 			var bottomBordered = heightPosition == height - 1;
-			var box = ds_grid_get(field, widthPosition, heightPosition);
+			var box = scr_get_box_by_coordinate(field, widthPosition, heightPosition);
 
 			array_push(minePositions, i);			
 			box.setMine(true);
 			
 			if (!leftBordered) {
-				var leftBox = ds_grid_get(field, widthPosition - 1, heightPosition);
+				var leftBox = scr_get_box_by_coordinate(field, widthPosition - 1, heightPosition);
 				leftBox.addNearby();
 				
 				if (!topBordered) {
-					var leftTopBox = ds_grid_get(field, widthPosition - 1, heightPosition - 1);
+					var leftTopBox = scr_get_box_by_coordinate(field, widthPosition - 1, heightPosition - 1);
 					leftTopBox.addNearby();
 				}
 				
 				if (!bottomBordered) {
-					var leftBottomBox = ds_grid_get(field, widthPosition - 1, heightPosition + 1);
+					var leftBottomBox = scr_get_box_by_coordinate(field, widthPosition - 1, heightPosition + 1);
 					leftBottomBox.addNearby();
 				}
 			}
 			
 			if (!rightBordered) {
-				var rightBox = ds_grid_get(field, widthPosition + 1, heightPosition);
+				var rightBox = scr_get_box_by_coordinate(field, widthPosition + 1, heightPosition);
 				rightBox.addNearby();
 				
 				if (!topBordered) {
-					var rightTopBox = ds_grid_get(field, widthPosition + 1, heightPosition - 1);
+					var rightTopBox = scr_get_box_by_coordinate(field, widthPosition + 1, heightPosition - 1);
 					rightTopBox.addNearby();
 				}
 				
 				if (!bottomBordered) {
-					var rightBottomBox = ds_grid_get(field, widthPosition + 1, heightPosition + 1);
+					var rightBottomBox = scr_get_box_by_coordinate(field, widthPosition + 1, heightPosition + 1);
 					rightBottomBox.addNearby();
 				}
 			}
 			
 			if (!topBordered) {
-				var topBox = ds_grid_get(field, widthPosition, heightPosition - 1);
+				var topBox = scr_get_box_by_coordinate(field, widthPosition, heightPosition - 1);
 				topBox.addNearby();
 			}
 			
 			if (!bottomBordered) {
-				var bottomBox = ds_grid_get(field, widthPosition, heightPosition + 1);
+				var bottomBox = scr_get_box_by_coordinate(field, widthPosition, heightPosition + 1);
 				bottomBox.addNearby();
 			}
 		}
@@ -76,5 +76,6 @@ function scr_create_minesweeper(width, height, mines) {
 		self.mines = mines;
 		self.size = size;
 		self.field = field;
+		self.minePositions = minePositions;
 	};
 }

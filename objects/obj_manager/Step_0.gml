@@ -20,14 +20,19 @@ switch (state) {
 	}
 	
 	case ManagerState.PLAYING: {
-		if (minesweeper != noone && minesweeper.dunked) {
-			state = ManagerState.DUNKED;
+		if (minesweeper != noone) {
+			if (minesweeper.dunked) {
+				state = ManagerState.DUNKED;
+			} else if (minesweeper.completed) {
+				state = ManagerState.COMPLETED;
+			}
 		}
 		
 		break;
 	}
 	
-	case ManagerState.DUNKED: {
+	case ManagerState.DUNKED:
+	case ManagerState.COMPLETED: {
 		if (mouse_check_button_released(mb_any)) {
 			game_restart();
 		}

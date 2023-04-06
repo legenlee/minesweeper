@@ -3,9 +3,20 @@ height = noone;
 mines = noone;
 size = noone;
 minePositions = noone;
-flagPositions = noone;
+
+flags = 0;
+openedBoxs = 0;
+
+fieldRectTop = noone;
+fieldRectBottom = noone;
+fieldRectLeft = noone;
+fieldRectRight = noone;
+
+fieldWidth = noone;
+fieldHeight = noone;
 
 dunked = false;
+completed = false;
 
 hoveredBoxX = noone;
 hoveredBoxY = noone;

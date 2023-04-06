@@ -54,17 +54,20 @@ switch (state) {
 	
 	case ManagerState.DUNKED: {
 		draw_set_font(FONT_HEADER);
-		
-		//draw_set_color(COLOR_BLUE);
-		//draw_text(horizontalCenter + 4, verticalCenter - 16 + 4, GAMEOVER_TITLE);
-		draw_text_outlined(horizontalCenter, verticalCenter - 16, GAMEOVER_TITLE, COLOR_YELLOW, COLOR_BLACK);
-		
+		draw_text_outlined(horizontalCenter, verticalCenter - 16, "well, seems like you've been dunked on.", COLOR_YELLOW, COLOR_BLACK);
 		
 		draw_set_font(FONT_DEFAULT);
+		draw_text_outlined(horizontalCenter, verticalCenter + 16, "anyway, click any mouse button makes game reset.", COLOR_YELLOW, COLOR_BLACK);
 
-		//draw_set_color(COLOR_BLUE);
-		//draw_text(horizontalCenter + 4, verticalCenter + 16 + 4, GAMEOVER_LABEL);
-		draw_text_outlined(horizontalCenter, verticalCenter + 16, GAMEOVER_LABEL, COLOR_YELLOW, COLOR_BLACK);
+		break;
+	}
+	
+	case ManagerState.COMPLETED: {
+		draw_set_font(FONT_HEADER);
+		draw_text_outlined(horizontalCenter, verticalCenter - 16, "good job, dude. you made it.", COLOR_GREEN, COLOR_BLACK);
+		
+		draw_set_font(FONT_DEFAULT);
+		draw_text_outlined(horizontalCenter, verticalCenter + 16, "do you wanna more shot? click any mouse button makes game reset.", COLOR_GREEN, COLOR_BLACK);
 
 		break;
 	}

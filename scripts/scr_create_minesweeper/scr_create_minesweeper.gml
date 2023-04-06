@@ -72,6 +72,9 @@ function scr_create_minesweeper(width, height, mines) {
 	
 	var minesweeper = instance_create_layer(0, 0, "Instances", obj_minesweeper);
 	
+	var horizontalCenter = room_width / 2;
+	var verticalCenter = room_height / 2;
+	
 	with (minesweeper) {
 		self.width = width;
 		self.height = height;
@@ -80,6 +83,14 @@ function scr_create_minesweeper(width, height, mines) {
 		self.field = field;
 		self.minePositions = minePositions;
 		self.flagPositions = ds_list_create();
+		
+		self.fieldWidth = BOX_SIZE * width + BOX_SPACING * (width - 1);
+		self.fieldHeight = BOX_SIZE * height + BOX_SPACING * (height - 1);
+	
+		self.fieldRectTop = verticalCenter - fieldHeight / 2;
+		self.fieldRectBottom = verticalCenter + fieldHeight / 2;
+		self.fieldRectLeft = horizontalCenter - fieldWidth / 2;
+		self.fieldRectRight = horizontalCenter + fieldWidth / 2;
 	};
 	
 	return minesweeper;

@@ -5,5 +5,11 @@ function scr_toggle_flag_box_by_coordinate(field, boxX, boxY, width, height) {
 		return;
 	}
 	
-	box.setFlagged(!box.flagged);
+	var value = !box.flagged;
+	
+	with (obj_minesweeper) {
+		self.flags += value ? 1 : -1;
+	}
+	
+	box.setFlagged(value);
 }

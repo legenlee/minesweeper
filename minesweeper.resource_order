@@ -22,5 +22,6 @@
     {"name":"scr_room","order":1,"path":"scripts/scr_room/scr_room.yy",},
     {"name":"obj_manager","order":2,"path":"objects/obj_manager/obj_manager.yy",},
     {"name":"spr_number","order":1,"path":"sprites/spr_number/spr_number.yy",},
+    {"name":"spr_mine","order":2,"path":"sprites/spr_mine/spr_mine.yy",},
   ],
 }

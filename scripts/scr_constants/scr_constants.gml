@@ -12,10 +12,10 @@
 	#macro COLOR_BLACK make_color_rgb(0, 0, 0)
 	
 	#macro COLOR_YELLOW make_color_rgb(255, 255, 0)
-	#macro COLOR_BLUE make_color_rgb(0, 0, 220)
+	#macro COLOR_BLUE make_color_rgb(0, 96, 255)
 	#macro COLOR_GREEN make_color_rgb(0, 220, 0)
 	#macro COLOR_RED make_color_rgb(220, 0, 0)
-	#macro COLOR_LIGHT_BLUE make_color_rgb(0, 128, 248)
+	#macro COLOR_LIGHT_BLUE make_color_rgb(0, 192, 248)
 	#macro COLOR_BROWN make_color_rgb(217, 185, 155)
 	#macro COLOR_CYAN make_color_rgb(0, 255, 255)
 	
@@ -24,9 +24,6 @@
 	#macro FONT_MINE_LABEL fnt_mine_label
 	
 	#macro TEXT_BUTTON_PADDING 24
-	
-	#macro GAMEOVER_TITLE "well, seems like you've been dunked on."
-	#macro GAMEOVER_LABEL "anyway, click any mouse button makes game reset."
 #endregion
 
 #region Gamefield Settings

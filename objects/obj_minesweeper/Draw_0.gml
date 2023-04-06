@@ -1,27 +1,19 @@
 if (width != noone && height != noone) {
 	var horizontalCenter = room_width / 2;
-	var verticalCenter = room_height / 2;
-	
-	var fieldWidth = BOX_SIZE * width + BOX_SPACING * (width - 1);
-	var fieldHeight = BOX_SIZE * height + BOX_SPACING * (height - 1);
-	
-	var rectTop = verticalCenter - fieldHeight / 2;
-	var rectBottom = verticalCenter + fieldHeight / 2;
-	var rectLeft = horizontalCenter - fieldWidth / 2;
-	var rectRight = horizontalCenter + fieldWidth / 2;
 	
 	hoveredBoxX = noone;
 	hoveredBoxY = noone;
-	clickable = mouse_x >= rectLeft && mouse_x <= rectRight && mouse_y >= rectTop && mouse_y <= rectBottom;
 
 	draw_set_align(fa_center, fa_middle);
+	draw_set_color(COLOR_YELLOW);
+	draw_text(horizontalCenter, fieldRectTop - 32, string(mines - flags));
 	
 	for (var i = 0; i < width; i += 1) {
 		for (var j = 0; j < height; j += 1) {
 			var box = ds_grid_get(field, i, j);
-			var boxRectTop = rectTop + j * BOX_SIZE + (j - 1) * BOX_SPACING;
+			var boxRectTop = fieldRectTop + j * BOX_SIZE + (j - 1) * BOX_SPACING;
 			var boxRectBottom = boxRectTop + BOX_SIZE;
-			var boxRectLeft = rectLeft + i * BOX_SIZE + (i - 1) * BOX_SPACING;
+			var boxRectLeft = fieldRectLeft + i * BOX_SIZE + (i - 1) * BOX_SPACING;
 			var boxRectRight = boxRectLeft + BOX_SIZE;
 			
 			if (mouse_x >= boxRectLeft - BOX_PADDING && mouse_x <= boxRectRight + BOX_PADDING && mouse_y >= boxRectTop - BOX_PADDING && mouse_y <= boxRectBottom + BOX_PADDING) {
@@ -89,7 +81,7 @@ if (width != noone && height != noone) {
 					draw_sprite(spr_mine, 0, boxRectLeft, boxRectTop);
 				}
 			} else {
-				if (dunked || !hovered) {
+				if (!clickable || !hovered) {
 					draw_set_color(COLOR_GRAY);
 				} else if (mouseLeftInput) {
 					draw_set_color(COLOR_DARK_GRAY);
@@ -98,6 +90,10 @@ if (width != noone && height != noone) {
 				}
 				
 				draw_rectangle(boxRectLeft + 1, boxRectTop + 1, boxRectRight - 1, boxRectBottom - 1, false);
+				
+				if (box.flagged) {
+					draw_sprite(spr_flag, 0, boxRectLeft, boxRectTop);
+				}
 			}		
 		}
 	}

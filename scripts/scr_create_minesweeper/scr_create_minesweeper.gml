@@ -91,6 +91,8 @@ function scr_create_minesweeper(width, height, mines) {
 		self.fieldRectBottom = verticalCenter + fieldHeight / 2;
 		self.fieldRectLeft = horizontalCenter - fieldWidth / 2;
 		self.fieldRectRight = horizontalCenter + fieldWidth / 2;
+	
+		self.startedAt = date_current_datetime();
 	};
 	
 	return minesweeper;

@@ -1,12 +1,14 @@
 if (width != noone && height != noone) {
 	var horizontalCenter = room_width / 2;
-	
+	var calculatedTimespan = round(date_second_span(startedAt, current));
+
 	hoveredBoxX = noone;
-	hoveredBoxY = noone;
+	hoveredBoxY = noone;	
 
 	draw_set_align(fa_center, fa_middle);
 	draw_set_color(COLOR_YELLOW);
-	draw_text(horizontalCenter, fieldRectTop - 32, string(mines - flags));
+	draw_text(horizontalCenter - 64, fieldRectTop - 32, string(mines - flags));
+	draw_text(horizontalCenter + 64, fieldRectTop - 32, string(calculatedTimespan));
 	
 	for (var i = 0; i < width; i += 1) {
 		for (var j = 0; j < height; j += 1) {

@@ -26,3 +26,6 @@ mouseLeftReleased = 0;
 clickable = false;
 
 field = noone;
+
+startedAt = noone;
+current = noone;

@@ -1,5 +1,11 @@
 if (width != noone && height != noone) {
-	if (!dunked || !completed) {
+	if (dunked || completed) {
+		mouseLeftInput = 0;
+		mouseLeftReleased = 0;
+		clickable = false;
+	} else {
+		current = date_current_datetime();
+		
 		var hovered = hoveredBoxX != noone && hoveredBoxY != noone
 		
 		mouseLeftInput = mouse_check_button(mb_left);
@@ -18,8 +24,5 @@ if (width != noone && height != noone) {
 		if (openedBoxs + mines = size) {
 			completed = true;
 		}
-	} else {
-		mouseLeftInput = 0;
-		mouseLeftReleased = 0;
 	}
 }
